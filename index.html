@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="./assets/simplelineicons/css/simple-line-icons.css">
+</head>
+<body>
+    <header>
+        <nav class="top-bar">
+            <ul class="social-list">
+                <li class="link" id="social-facebook" onclick="toSocialPage(1)"><span class="icon-social-facebook"></span></li>
+                <li class="link" id="social-twitter" onclick="toSocialPage(2)"><span class="icon-social-twitter"></span></li>
+                <li class="link" id="social-insta" onclick="toSocialPage(3)"><span class="icon-social-instagram"></span></li>
+                <li class="link" id="social-user" onclick="toSocialPage(4)"><span class="icon-user"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tasks">
+            <section id="cadTask">
+                <h2>Cadastro de tarefas</h2>
+                <form id="taskForm">
+                    <label for="taskInput">Tarefa:</label>
+                    <input type="text" id="taskInput" />
+                    <button id="addTaskBtn">+</button>
+            </section>
+
+            <section id="listTask">
+                <h2>Tarefas cadastradas</h2>
+                <ul id="taskList">
+                    
+                </ul>
+            </section>            
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados &copy;<a href="#">Elton Nascimento</a> 2022</p>
+    </footer>
+
+    <script src="./assets/scripts/tasks.js"></script>
+</body>
+</html>
